@@ -7,4 +7,6 @@ $injection = {
 }
 
 Register-CimIndicationEvent -Namespace root\cimv2 -Query $usb -Action $injection -SourceIdentifier "NetLbfoTeamMember"
-Read-Host -Prompt "Fixed?"
+
+Write-Host "Fixed?" -ForegroundColor Cyan
+Read-Host
